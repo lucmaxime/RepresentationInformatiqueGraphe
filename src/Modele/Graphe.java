@@ -45,17 +45,20 @@ public class Graphe {
     }
 
     public void supprimerNoeud(Noeud victim) {
-            //TECHNIQUE AVEC HASHMAP QUI SOULEVE UNE CONCURENTMODIFICATIONEXCEPTION!
-        for (HashMap.Entry mapentry : listeNoeuds.entrySet()) {
-            Noeud noeud = (Noeud) mapentry.getValue();
-            for (HashMap.Entry mapentry2 : noeud.getListeArcSortants().entrySet()){
-                Arc arc = (Arc) mapentry2.getValue();
-                if(arc.getNoeudDestination().getNom() == victim.getNom()){
-                    noeud.getListeArcSortants().remove(arc.getNom());
-                }
-            }
+        //TECHNIQUE AVEC ITERATOR (Qui soulève une erreur mais ne devrait pas
+      Noeud tmp_node;
+      Arc tmp_a;
+      for (Iterator it = this.listeNoeuds.values().iterator(); ((Iterator) it).hasNext(); ) {
+        tmp_node = (Noeud) it.next();
+        for (Iterator ita = tmp_node.getListeArcSortants().values().iterator(); ita.hasNext(); ) {
+          tmp_a = (Arc) ita.next();
+          if (tmp_a.getNoeudDestination().getNom().equals(victim.getNom())) {
+            ita.remove();
+            ;
+          }
         }
         this.listeNoeuds.remove(victim.getNom());
+      }
     }
 
     public Noeud rechercherNoeud(String nom){
