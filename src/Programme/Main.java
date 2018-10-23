@@ -16,10 +16,12 @@ public class Main {
         System.out.println("Voici tous les noeuds et Arc de mon Graphe");
         System.out.println(g.toString());
 
-        //Nullpointerexception si je mets avec X1??? (Marche car aucun arc n'a de destination X3)
-        g.supprimerNoeud("X3");
-
         System.out.printf("Voici après suppression du Noeud X3 \n");
+        g.supprimerNoeud("X3");
+        System.out.println(g.toString());
+
+        System.out.println("Voici après suppression de l'arc u4 \n");
+        g.supprimerArc("u4");
         System.out.println(g.toString());
 
     }

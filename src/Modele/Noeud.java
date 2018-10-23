@@ -70,8 +70,8 @@ public class Noeud {
     @Override
     public String toString(){
       String sortie = "(";
-      for (HashMap.Entry mapentry : listeArcSortants.entrySet()) {
-        sortie = sortie + ","+mapentry.getValue().toString();
+      for (Arc arcCourrant : listeArcSortants.values()) {
+        sortie = sortie + ","+arcCourrant.toString();
      }
       sortie = sortie +")";
       return sortie;

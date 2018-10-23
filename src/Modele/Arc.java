@@ -14,6 +14,7 @@ public class Arc {
     this.nom = nom;
     this.metrique = metrique;
     this.noeudDestination = noeudDestination;
+    this.noeudSource = noeudSource;
   }
 
     public Noeud getNoeudSource() {
@@ -50,6 +51,6 @@ public class Arc {
 
     @Override
     public String toString(){
-      return ("("+this.nom+","+this.noeudDestination.getNom()+","+this.metrique+")");
+      return ("("+this.nom+","+this.noeudDestination.getNom()+","+this.noeudSource.getNom()+","+this.metrique+")");
     }
 }
