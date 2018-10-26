@@ -1,6 +1,10 @@
 package Modele;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 
 public class Graphe {
 
@@ -80,6 +84,58 @@ public class Graphe {
     this.listeNoeuds.remove(nom);
   }
 
+  public List<Noeud> parcoursLargeur(Noeud noeudDepart){
+    this.reinitialisationMarqueGraphe();
+    LinkedList<Noeud> file = new LinkedList<>();
+    noeudDepart.setMarque(true);
+    List<Noeud> parcours = new ArrayList<>();
+    file.addFirst(noeudDepart);
+
+    while(!file.isEmpty()){
+      //on trouve le dernier noeud de la file et l'ajoute dans le parcours
+      Noeud noeudCourrant = file.removeLast();
+      parcours.add(noeudCourrant);
+      //On parcourt les arcs pour trouver les noeuds voisins et si le noeud n'est pas encore en mêmoire on le marque + ajout en mêmoire
+      for(Arc arcCourrant : noeudCourrant.getListeArcSortants().values()){
+        Noeud noeudDestination = arcCourrant.getNoeudDestination();
+        if (!noeudDestination.getMarque()){
+          noeudDestination.setMarque(true);
+          file.addFirst(noeudDestination);
+        }
+      }
+    }
+    return parcours;
+  }
+
+  public List<Noeud> parcoursProfondeur(Noeud noeudDepart){
+    this.reinitialisationMarqueGraphe();
+    Stack<Noeud> pile = new Stack<>();
+    noeudDepart.setMarque(true);
+    List<Noeud> parcours = new ArrayList<>();
+
+    pile.push(noeudDepart);
+
+    while(!pile.isEmpty()){
+      //on trouve le dernier noeud de la pile et l'ajoute dans le parcours
+      Noeud noeudCourrant = pile.pop();
+      parcours.add(noeudCourrant);
+      //On parcourt les arcs pour trouver les noeuds voisins et si le noeud n'est pas encore en mêmoire on le marque + ajout en mêmoire
+      for(Arc arcCourrant : noeudCourrant.getListeArcSortants().values()){
+        Noeud noeudDestination = arcCourrant.getNoeudDestination();
+        if (!noeudDestination.getMarque()){
+          noeudDestination.setMarque(true);
+          pile.push(noeudDestination);
+        }
+      }
+    }
+    return parcours;
+  }
+
+  public void reinitialisationMarqueGraphe(){
+    for (Noeud noeudCourrant : this.listeNoeuds.values()){
+      noeudCourrant.setMarque(false);
+    }
+  }
 
   public void ajouterArc(String source, String destination, String nom, Integer metrique) {
     if (!this.listeNoeuds.containsKey(destination)) {

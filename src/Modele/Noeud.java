@@ -5,14 +5,17 @@ import java.util.HashMap;
 public class Noeud {
 
     private String nom;
+    private Boolean marque;
 
-    private HashMap<String, Arc> listeArcSortants;
+
+  private HashMap<String, Arc> listeArcSortants;
     private HashMap<String, Arc> listArcEntrants;
 
     public Noeud(String nom) {
       this.nom = nom;
       this.listeArcSortants = new HashMap<>();
       this.listArcEntrants = new HashMap<>();
+      this.marque = false;
     }
 
     public String getNom() {
@@ -22,6 +25,14 @@ public class Noeud {
     public void setNom(String nom) {
     this.nom = nom;
   }
+
+    public Boolean getMarque() {
+      return marque;
+    }
+
+    public void setMarque(Boolean marque) {
+      this.marque = marque;
+    }
 
     public HashMap<String, Arc> getListArcEntrants() {
       return listArcEntrants;
@@ -70,10 +81,11 @@ public class Noeud {
     @Override
     public String toString(){
       String sortie = "(";
+
       for (Arc arcCourrant : listeArcSortants.values()) {
-        sortie = sortie + ","+arcCourrant.toString();
+        sortie = sortie + arcCourrant.toString();
      }
-      sortie = sortie +")";
+      sortie = sortie+")";
       return sortie;
     }
 }
