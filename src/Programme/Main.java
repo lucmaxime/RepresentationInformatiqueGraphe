@@ -34,7 +34,7 @@ public class Main {
         }
 
         System.out.println("Test d'un parcours de noeuds en largeur\n");
-        List<Noeud> listNoeudLargeur = g.parcoursLargeur(g.rechercherNoeud("A"));
+        List<Noeud> listNoeudLargeur = g.parcoursLargeur(g.rechercherNoeud("A"),1);
         for (Noeud noeudCourrant : listNoeudLargeur){
           System.out.println(noeudCourrant.getNom()+" : "+noeudCourrant.toString());
         }

@@ -84,11 +84,13 @@ public class Graphe {
     this.listeNoeuds.remove(nom);
   }
 
-  public List<Noeud> parcoursLargeur(Noeud noeudDepart){
+  public List<Noeud> parcoursLargeur(Noeud noeudDepart, int niveauMax){
     this.reinitialisationMarqueGraphe();
     LinkedList<Noeud> file = new LinkedList<>();
     noeudDepart.setMarque(true);
     List<Noeud> parcours = new ArrayList<>();
+    //Initialisation du niveau 0
+    noeudDepart.setNiveau(0);
     file.addFirst(noeudDepart);
 
     while(!file.isEmpty()){
@@ -99,8 +101,12 @@ public class Graphe {
       for(Arc arcCourrant : noeudCourrant.getListeArcSortants().values()){
         Noeud noeudDestination = arcCourrant.getNoeudDestination();
         if (!noeudDestination.getMarque()){
+          //on lui attribue son level par rapport au noeudCourrant
+          noeudDestination.setNiveau(noeudCourrant.getNiveau()+1);
           noeudDestination.setMarque(true);
-          file.addFirst(noeudDestination);
+          if (noeudDestination.getNiveau()<=niveauMax){
+            file.addFirst(noeudDestination);
+          }
         }
       }
     }
@@ -114,7 +120,6 @@ public class Graphe {
     List<Noeud> parcours = new ArrayList<>();
 
     pile.push(noeudDepart);
-
     while(!pile.isEmpty()){
       //on trouve le dernier noeud de la pile et l'ajoute dans le parcours
       Noeud noeudCourrant = pile.pop();
