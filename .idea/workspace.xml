@@ -2,7 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3954f34-5e29-423d-95fd-5b5bbc1bb67e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Arcs/Aime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Arcs/Cuisine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Arcs/Ecoute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Arcs/EstAmi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Arcs/Regarde.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Aliment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Cinema.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Conference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Musique.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Personne.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Graphe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Graphe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeud.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeud.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Programme/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Programme/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Modele/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Arc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modele/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Graphe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modele/Noeud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Noeud.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Programme/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programme/Main.java" afterDir="false" />
@@ -61,45 +77,49 @@
     <session id="-124125540">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="27" />
+          <entry key="project.open.time.1" value="4" />
           <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.16" value="2" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="2" />
-          <entry key="project.open.time.19" value="1" />
-          <entry key="project.open.time.2" value="2" />
+          <entry key="project.open.time.19" value="2" />
+          <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.24" value="1" />
-          <entry key="project.open.time.25" value="1" />
+          <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="24" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8218" />
+          <entry key="dummy" value="36" />
+          <entry key="java" value="14074" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8218" />
+          <entry key="JAVA" value="14074" />
+          <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="Noeud" value="1" />
+          <entry key="java" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="JAVA" value="39" />
+          <entry key="UML" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -112,46 +132,68 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Programme/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+            <state relative-caret-position="156">
+              <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="86" column="71" lean-forward="true" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#ajouterNoeud#0;class#Graphe#0" />
-                <element signature="e#1093#1094#0" expanded="true" />
-                <element signature="e#1135#1136#0" expanded="true" />
-                <element signature="method#ajouterArc#0;class#Graphe#0" />
-                <element signature="method#rechercherArc#0;class#Graphe#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#toString#0;class#Graphe#0" />
+                <element signature="method#Graphe#0;class#Graphe#0" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1110#1111#0" expanded="true" />
+                <element signature="method#supprimerNoeud#0;class#Graphe#0" />
+                <element signature="method#parcoursLargeur#0;class#Graphe#0" />
+                <element signature="method#parcoursProfondeur#0;class#Graphe#0" />
+                <element signature="method#getAmisNiveau2CelibParHobby#0;class#Graphe#0" />
+                <element signature="method#contientNoeud#0;class#Graphe#0" />
+                <element signature="method#reinitialisationMarqueGraphe#0;class#Graphe#0" />
+                <element signature="method#ajouterArc#0;class#Graphe#0" />
+                <element signature="method#rechercherArc#0;class#Graphe#0" />
+                <element signature="method#supprimerArc#0;class#Graphe#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
+            <state relative-caret-position="372">
+              <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               <folding>
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#487#488#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#547#548#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#1668#1669#0" expanded="true" />
-                <element signature="e#1718#1719#0" expanded="true" />
+                <element signature="method#ajouterArcAuNoeud#0;class#Noeud#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Personne.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/Cuisine.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -160,8 +202,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modele/Arc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="897">
-              <caret line="53" column="92" selection-start-line="53" selection-start-column="92" selection-end-line="53" selection-end-column="92" />
+            <state relative-caret-position="157">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#834#835#0" expanded="true" />
+                <element signature="e#871#872#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/EstAmi.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="322">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -181,10 +239,26 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/Modele/Person.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Aliment.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Musique.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Cinema.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Conference.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Person.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Musique.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Conference.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Cinema.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Aliment.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Arcs/Friend.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Arcs/Listen.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Arcs/Watch.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Arcs/Cook.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Arcs/Like.java" />
         <option value="$PROJECT_DIR$/src/Modele/Arc.java" />
         <option value="$PROJECT_DIR$/src/Modele/Noeud.java" />
-        <option value="$PROJECT_DIR$/src/Modele/Graphe.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Noeuds/Personne.java" />
         <option value="$PROJECT_DIR$/src/Programme/Main.java" />
+        <option value="$PROJECT_DIR$/src/Modele/Graphe.java" />
       </list>
     </option>
   </component>
@@ -201,7 +275,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
+    <option name="x" value="712" />
+    <option name="y" value="-38" />
     <option name="width" value="1224" />
     <option name="height" value="1047" />
   </component>
@@ -211,6 +286,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,25 +305,38 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Modele" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Representation_informatique_graphe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Representation_informatique_graphe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Modele" type="462c0819:PsiDirectoryNode" />
+              <item name="Arcs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Representation_informatique_graphe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Representation_informatique_graphe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Modele" type="462c0819:PsiDirectoryNode" />
+              <item name="Noeuds" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540897999941" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541001388049" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Concepts_avancés_de_persistance/Corrigés/designpatterns-gof_2c" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -316,17 +405,22 @@
       <workItem from="1540554592372" duration="5381000" />
       <workItem from="1540567608032" duration="35000" />
       <workItem from="1540567709304" duration="1766000" />
-      <workItem from="1540891026196" duration="4188000" />
+      <workItem from="1540891026196" duration="6110000" />
+      <workItem from="1540905729180" duration="7364000" />
+      <workItem from="1540978289664" duration="11276000" />
+      <workItem from="1541074054862" duration="314000" />
+      <workItem from="1541492137862" duration="14160000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65415000" />
+    <option name="totallyTimeSpent" value="100451000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.19579579" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.1021021" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -334,14 +428,44 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.5014663" side_tool="true" weight="0.17880794" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4996997" visible="true" weight="0.13636364" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996997" visible="true" weight="0.10732323" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3219697" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.1489899" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.084595956" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003003" side_tool="true" weight="0.3181818" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.29924244" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.32972974" />
+      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32972974" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49853373" visible="true" weight="0.15735735" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" sideWeight="0.5014663" side_tool="true" weight="0.17880794" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4996997" visible="true" weight="0.078282826" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3219697" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.084595956" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003003" side_tool="true" weight="0.3181818" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32828283" />
@@ -354,7 +478,7 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.32972974" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32972974" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -377,17 +501,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JAVA/Modele.Noeud">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>Modele.Noeud</OriginalElement>
+          <nodes>
+            <node x="" y="">Modele.Noeud</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="42.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Conference.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Musique.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Cinema.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Aliment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#151#152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/Ecoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/Regarde.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/Aime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/Cuisine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modele/Arc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="897">
-          <caret line="53" column="92" selection-start-line="53" selection-start-column="92" selection-end-line="53" selection-end-column="92" />
+        <state relative-caret-position="157">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#834#835#0" expanded="true" />
+            <element signature="e#871#872#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Arcs/EstAmi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Personne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_131/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="954" column="25" selection-start-line="954" selection-start-column="25" selection-end-line="954" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding>
+            <element signature="method#ajouterArcAuNoeud#0;class#Noeud#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Programme/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="36" column="81" selection-start-line="36" selection-start-column="81" selection-end-line="36" selection-end-column="81" />
+        <state relative-caret-position="156">
+          <caret line="48" column="67" lean-forward="true" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -396,32 +648,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="86" column="71" lean-forward="true" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
+        <state relative-caret-position="243">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#ajouterNoeud#0;class#Graphe#0" />
-            <element signature="e#1093#1094#0" expanded="true" />
-            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="method#toString#0;class#Graphe#0" />
+            <element signature="method#Graphe#0;class#Graphe#0" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1110#1111#0" expanded="true" />
+            <element signature="method#supprimerNoeud#0;class#Graphe#0" />
+            <element signature="method#parcoursLargeur#0;class#Graphe#0" />
+            <element signature="method#parcoursProfondeur#0;class#Graphe#0" />
+            <element signature="method#getAmisNiveau2CelibParHobby#0;class#Graphe#0" />
+            <element signature="method#contientNoeud#0;class#Graphe#0" />
+            <element signature="method#reinitialisationMarqueGraphe#0;class#Graphe#0" />
             <element signature="method#ajouterArc#0;class#Graphe#0" />
             <element signature="method#rechercherArc#0;class#Graphe#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
-          <folding>
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#487#488#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-            <element signature="e#1668#1669#0" expanded="true" />
-            <element signature="e#1718#1719#0" expanded="true" />
+            <element signature="method#supprimerArc#0;class#Graphe#0" />
           </folding>
         </state>
       </provider>

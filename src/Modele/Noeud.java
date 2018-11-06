@@ -2,7 +2,7 @@ package Modele;
 
 import java.util.HashMap;
 
-public class Noeud {
+public abstract class  Noeud {
 
     private String nom;
     private Boolean marque;
@@ -58,15 +58,21 @@ public class Noeud {
       this.listeArcSortants = listeArcSortants;
     }
 
-
-    public void ajouterArcSortant(String nom, Integer metrique, Noeud destination, Noeud source){
-      Arc arc = new Arc(nom, metrique, destination, source);
-      this.listeArcSortants.put(nom, arc);
+    //Suivant si on le lance sur un noeud qui est un noeud de destination ou source on va mettre arc entrant ou sortant
+    public void ajouterArcAuNoeud(Arc arc){
+      if(this == arc.getNoeudSource()) {
+        this.ajouterArcSortant(arc);
+      }else if (this == arc.getNoeudDestination()) {
+        this.ajouterArcEntrant(arc);
+      }
+    }
+    private void ajouterArcSortant(Arc arc){
+      //Prendre en compte la généricité dans la construction
+      this.listeArcSortants.put(arc.getNom(), arc);
     }
 
-    public void ajouterArcEntrant(String nom, Integer metrique, Noeud destination, Noeud source){
-      Arc arc = new Arc(nom, metrique, destination, source);
-      this.listArcEntrants.put(nom, arc);
+    private void ajouterArcEntrant(Arc arc){
+      this.listArcEntrants.put(arc.getNom(), arc);
     }
 
     public Arc rechercherArcSortant(String nom){

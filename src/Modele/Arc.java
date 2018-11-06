@@ -1,20 +1,24 @@
 package Modele;
 
-public class Arc {
+import Modele.Noeuds.Personne;
+
+public abstract class Arc {
 
     private String nom;
     private Integer metrique;
     private Noeud noeudDestination;
     private Noeud noeudSource;
 
-    public Arc() {
-    }
-
     public Arc(String nom, Integer metrique, Noeud noeudDestination, Noeud noeudSource) {
-    this.nom = nom;
-    this.metrique = metrique;
-    this.noeudDestination = noeudDestination;
-    this.noeudSource = noeudSource;
+
+      this.nom = nom;
+      this.metrique = metrique;
+      this.noeudDestination = noeudDestination;
+      this.noeudSource = noeudSource;
+
+      if(!(noeudSource instanceof Personne)){
+      throw new IllegalArgumentException("Noeud source de l'arc n'est pas une personne");
+    }
   }
 
     public Noeud getNoeudSource() {
