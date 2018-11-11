@@ -68,7 +68,7 @@ public class Main {
 
         for (Personne noeudCourrant : listAmis2èmeNiveua){
             if(noeudCourrant.isEnCouple()){
-                for(Arc arcCourrant : noeudCourrant.getListeArcSortants()){
+                for(Arc arcCourrant : noeudCourrant.getListeArcSortants().values()){
                     if(arcCourrant.getNoeudDestination().getNom().equals("Netflix")){
                         listFinal.add(noeudCourrant);
                     }

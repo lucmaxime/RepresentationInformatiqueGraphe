@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3954f34-5e29-423d-95fd-5b5bbc1bb67e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Programme/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programme/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -84,12 +83,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="java" value="14724" />
+          <entry key="java" value="14725" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="14724" />
+          <entry key="JAVA" value="14725" />
           <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
@@ -115,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Programme/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
+            <state relative-caret-position="297">
+              <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
+            <state relative-caret-position="504">
               <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -151,7 +150,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1035">
+            <state relative-caret-position="504">
               <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
               <folding>
                 <element signature="method#ajouterArcAuNoeud#0;class#Noeud#0" />
@@ -394,12 +393,12 @@
       <workItem from="1541492137862" duration="14385000" />
       <workItem from="1541863799196" duration="408000" />
       <workItem from="1541865746873" duration="31000" />
-      <workItem from="1541924854507" duration="1423000" />
+      <workItem from="1541924854507" duration="1515000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102538000" />
+    <option name="totallyTimeSpent" value="102630000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
@@ -560,48 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Programme/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#toString#0;class#Graphe#0" />
-            <element signature="method#Graphe#0;class#Graphe#0" />
-            <element signature="e#1126#1127#0" expanded="true" />
-            <element signature="e#1168#1169#0" expanded="true" />
-            <element signature="method#supprimerNoeud#0;class#Graphe#0" />
-            <element signature="method#parcoursProfondeur#0;class#Graphe#0" />
-            <element signature="method#getAmisNiveau2CelibParHobby#0;class#Graphe#0" />
-            <element signature="method#contientNoeud#0;class#Graphe#0" />
-            <element signature="method#reinitialisationMarqueGraphe#0;class#Graphe#0" />
-            <element signature="method#ajouterArc#0;class#Graphe#0" />
-            <element signature="method#rechercherArc#0;class#Graphe#0" />
-            <element signature="method#supprimerArc#0;class#Graphe#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
-          <folding>
-            <element signature="method#ajouterArcAuNoeud#0;class#Noeud#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Modele/Noeuds/Personne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -634,6 +591,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="276">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#toString#0;class#Graphe#0" />
+            <element signature="method#Graphe#0;class#Graphe#0" />
+            <element signature="e#1126#1127#0" expanded="true" />
+            <element signature="e#1168#1169#0" expanded="true" />
+            <element signature="method#supprimerNoeud#0;class#Graphe#0" />
+            <element signature="method#parcoursProfondeur#0;class#Graphe#0" />
+            <element signature="method#getAmisNiveau2CelibParHobby#0;class#Graphe#0" />
+            <element signature="method#contientNoeud#0;class#Graphe#0" />
+            <element signature="method#reinitialisationMarqueGraphe#0;class#Graphe#0" />
+            <element signature="method#ajouterArc#0;class#Graphe#0" />
+            <element signature="method#rechercherArc#0;class#Graphe#0" />
+            <element signature="method#supprimerArc#0;class#Graphe#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Modele/Noeud.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+          <folding>
+            <element signature="method#ajouterArcAuNoeud#0;class#Noeud#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Programme/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
