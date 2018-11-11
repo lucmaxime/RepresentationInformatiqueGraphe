@@ -1,5 +1,6 @@
 package Programme;
 
+import Modele.Arc;
 import Modele.Arcs.Cuisine;
 import Modele.Arcs.EstAmi;
 import Modele.Arcs.Ecoute;
@@ -8,6 +9,7 @@ import Modele.Noeud;
 import Modele.Noeuds.Aliment;
 import Modele.Noeuds.Conference;
 import Modele.Noeuds.Personne;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -56,5 +58,25 @@ public class Main {
         for (Noeud noeudCourrant : listNoeudLargeur){
           System.out.println(noeudCourrant.getNom()+" : "+noeudCourrant.toString());
         }
+
+
+    }
+    //Fonction qui va nous retourner une liste d'amis 2ème niveau qui sont célibataire et qui regarde Netflix
+    private List<Noeud> getmis2èmeNiveauCélibataireNetflix(Noeud noeudDépart, Graphe g){
+        List<Noeud> listFinal = new ArrayList<>();
+        List<Personne> listAmis2èmeNiveua = (List<Personne>) (Noeud) g.parcoursLargeur(noeudDépart, 2, EstAmi.class);
+
+        for (Personne noeudCourrant : listAmis2èmeNiveua){
+            if(noeudCourrant.isEnCouple()){
+                for(Arc arcCourrant : noeudCourrant.getListeArcSortants()){
+                    if(arcCourrant.getNoeudDestination().getNom().equals("Netflix")){
+                        listFinal.add(noeudCourrant);
+                    }
+
+                }
+            }
+        }
+        return listFinal;
+
     }
 }
