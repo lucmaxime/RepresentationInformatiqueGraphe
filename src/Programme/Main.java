@@ -31,7 +31,7 @@ public class Main {
         g.ajouterArc(new EstAmi("amitié5",2,person5,person4));
         g.ajouterArc(new EstAmi("amitié6",6,person7,person5));
         g.ajouterArc(new EstAmi("amitié7",4,person7,person4));
-        g.ajouterArc(new EstAmi("amitié8",1,person6,person2));
+        g.ajouterArc(new EstAmi("amitié8",1,person5,person2));
         g.ajouterArc(new EstAmi("amitié9",8,person6,person4));
         g.ajouterArc(new EstAmi("amitié10",5,person6,person3));
         g.ajouterArc(new EstAmi("amitié11",4,person1,person3));
@@ -52,6 +52,16 @@ public class Main {
             System.out.println(triplet.getDijikstraNoeudPrecedent().getNom());
           }
         }
+
+        //Test de VPCC
+          System.out.println("Test de vpcc");
+          List<Triplet> tripletList = g.VPCC("V1","V6" );
+
+          for (Triplet triplet : tripletList){
+            System.out.println(triplet.getNom()+" "+triplet.getDijikstraPoids()+" "+triplet.getDijikstraNoeudPrecedent().getNom());
+          }
+
+
     }
     //Fonction qui va nous retourner une liste d'amis 2ème niveau qui sont célibataire et qui regarde Netflix
     private List<Noeud> getmis2èmeNiveauCélibataireNetflix(Noeud noeudDépart, Graphe g){

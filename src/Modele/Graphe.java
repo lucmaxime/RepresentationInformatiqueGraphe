@@ -207,6 +207,34 @@ public class Graphe {
     }
   }
 
+  //Calcul du plus court chemin d'un Noeud source à un Noeud destination (En utilisant le dijkstra)
+
+  public List<Triplet> VPCC(String source, String destination){
+    Noeud noeudSource = rechercherNoeud(source);
+    Noeud noeudDestination = rechercherNoeud(destination);
+
+    //On execute dijstra si le vpcc du noeudSource est vide
+    if(noeudSource.getVpcc().size() == 0){
+      dijkstra(noeudSource);
+    }
+
+    //On vérifie que la destination est vraiment atteignable
+    if (noeudSource.getVpcc().containsKey(noeudDestination.getNom())){
+      List<Triplet> listVPCC = new LinkedList<>();
+      HashMap<String, Triplet> vpcc = noeudSource.getVpcc();
+
+      //On récupère le triplet de notre noeud de destination et on le parcourt dans le sens inverse
+      Triplet tripletCourrant = vpcc.get(noeudDestination.getNom());
+      while(tripletCourrant.getDijikstraNoeudPrecedent() != null){
+        ((LinkedList<Triplet>) listVPCC).addFirst(tripletCourrant);
+        tripletCourrant = vpcc.get(tripletCourrant.getDijikstraNoeudPrecedent().getNom());
+      }
+      return listVPCC;
+    } else {
+      return null;
+    }
+
+  }
 
   //Calcul du plus court chemin pour un noeud donné pour tout les autres noeuds du graphe(stocker dans sa variable vpcc sous forme de triplet)
   public void dijkstra (Noeud depart){
