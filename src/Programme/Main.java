@@ -1,14 +1,11 @@
 package Programme;
 
 import Modele.Arc;
-import Modele.Arcs.Cuisine;
 import Modele.Arcs.EstAmi;
-import Modele.Arcs.Ecoute;
 import Modele.Graphe;
 import Modele.Noeud;
-import Modele.Noeuds.Aliment;
-import Modele.Noeuds.Conference;
 import Modele.Noeuds.Personne;
+import Modele.Triplet;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -18,48 +15,43 @@ public class Main {
         Graphe g = new Graphe("G4");
 
         //On va donc ajouter un arc en instancciant directement dedans les noeuds spécifiques + arc spécifique
-        Personne person1 = new Personne("Arnaud",false);
-        Personne person2 = new Personne("Maxime", false);
-        Personne person3 = new Personne("Alessandro", false);
+        Personne person1 = new Personne("V1",false);
+        Personne person2 = new Personne("V2", false);
+        Personne person3 = new Personne("V3", false);
+        Personne person4 = new Personne("V4", false);
+        Personne person5 = new Personne("V5", false);
+        Personne person6 = new Personne("V6", false);
+        Personne person7 = new Personne("V7", false);
 
 
-        g.ajouterArc(new EstAmi("amitié1",2,person1,person2));
-        g.ajouterArc(new EstAmi("amitié2",3,person3,person2));
-        g.ajouterArc(new EstAmi("amitié3",3,person3,person1));
+        g.ajouterArc(new EstAmi("amitié1",2,person2,person1));
+        g.ajouterArc(new EstAmi("amitié2",3,person4,person2));
+        g.ajouterArc(new EstAmi("amitié3",1,person4,person1));
+        g.ajouterArc(new EstAmi("amitié4",10,person5,person2));
+        g.ajouterArc(new EstAmi("amitié5",2,person5,person4));
+        g.ajouterArc(new EstAmi("amitié6",6,person7,person5));
+        g.ajouterArc(new EstAmi("amitié7",4,person7,person4));
+        g.ajouterArc(new EstAmi("amitié8",1,person6,person2));
+        g.ajouterArc(new EstAmi("amitié9",8,person6,person4));
+        g.ajouterArc(new EstAmi("amitié10",5,person6,person3));
+        g.ajouterArc(new EstAmi("amitié11",4,person1,person3));
 
-        //Ici on test l'ajout d'un arc avec un noeud source qui n'est pas une personne
-        //g.ajouterArc(new Cuisine("Cuisine1",4,new Personne("Moi", true),new Aliment("chocolat")));
+        //Test de dijikstra
 
-        //Ici on test l'ajout d'un arc avec des noeuds incohérent
-        //g.ajouterArc(new Ecoute("Ecoute1",5,new Conference("RechercheOperationnelle"),new Personne ("Maxime",false)));
-
-        //on ajoute un Arc  qu'on va supprimer
-        g.ajouterArc(new EstAmi("amitié4",3,new Personne("Jean",true),new Personne("Michel",true )));
-
-        System.out.println("Voici tous les noeuds et Arc de mon Graphe");
-        System.out.println(g.toString());
-
-        /*
-        System.out.println("Voici après suppression de l'arc amitié4 et des deux amis \n");
-        g.supprimerArc("amitié4");
-        g.supprimerNoeud("Jean");
-        g.supprimerNoeud("Michel");
-        System.out.println(g.toString());
+        g.dijkstra(person1);
 
 
-       System.out.println("Test d'un parcours de noeuds en profondeur\n");
-        List<Noeud> listNoeudProfondeur = g.parcoursProfondeur(g.rechercherNoeud("A"));
-        for (Noeud noeudCourrant : listNoeudProfondeur){
-          System.out.println(noeudCourrant.getNom()+" : "+noeudCourrant.toString());
+        System.out.println("Voici mon vppc du noeud person1");
+        for (Triplet triplet : person1.getVpcc().values()){
+
+          System.out.print(triplet.getNom()+" "+triplet.getDijikstraPoids());
+
+          if (triplet.getDijikstraNoeudPrecedent() == null) {
+            System.out.println(" Premier noeud null");
+          } else {
+            System.out.println(triplet.getDijikstraNoeudPrecedent().getNom());
+          }
         }
-*/
-        System.out.println("Test d'un parcours de noeuds en largeur suivant un type d'arc\n");
-        List<Noeud> listNoeudLargeur = g.parcoursLargeur(g.rechercherNoeud("Maxime"),1, EstAmi.class);
-        for (Noeud noeudCourrant : listNoeudLargeur){
-          System.out.println(noeudCourrant.getNom()+" : "+noeudCourrant.toString());
-        }
-
-
     }
     //Fonction qui va nous retourner une liste d'amis 2ème niveau qui sont célibataire et qui regarde Netflix
     private List<Noeud> getmis2èmeNiveauCélibataireNetflix(Noeud noeudDépart, Graphe g){

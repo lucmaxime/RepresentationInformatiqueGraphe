@@ -2,6 +2,7 @@ package Modele;
 
 import Modele.Arcs.EstAmi;
 import Modele.Noeuds.Personne;
+import Modele.Utils.DijkstraNodeComparator;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -203,6 +204,53 @@ public class Graphe {
       if (noeudCourrant.getListArcEntrants().containsKey(nom)) {
         noeudCourrant.supprimerArcEntrant(nom);
       }
+    }
+  }
+
+
+  //Calcul du plus court chemin pour un noeud donné pour tout les autres noeuds du graphe(stocker dans sa variable vpcc sous forme de triplet)
+  public void dijkstra (Noeud depart){
+
+    //Initialisation des variables dans notre graphe
+    for (Noeud noeudCourrant : this.listeNoeuds.values()){
+      noeudCourrant.setDijkstraNoeudPrecedent(null);
+      noeudCourrant.setDijkstraPoids(Integer.MAX_VALUE);
+    }
+
+    List<Noeud> memoire = new ArrayList<>();
+
+    //Ajout du noeud de départ à la mêmoire pour commencer par lui
+    memoire.add(depart);
+    depart.setDijkstraPoids(0);
+
+    while (!memoire.isEmpty()){
+
+      //On ordonne la liste selon le plus petit dijistrapoids en premier
+       memoire.sort(new DijkstraNodeComparator());
+
+      //On récupère(+supprime) ici le plus petit poid de la liste en mêmoire qui est maintenant en premier
+       Noeud noeudCourant = memoire.get(0);
+       memoire.remove(0);
+      
+       //On ajoute à notre chemin le plus court le triplet(infos) du noeud noeudCourant (Toujours avec l'ordre du plus petit en premier)
+       depart.getVpcc().put(noeudCourant.getNom(), new Triplet(noeudCourant.getNom(),noeudCourant.getDijkstraPoids(),noeudCourant.getDijkstraNoeudPrecedent()));
+
+       //Pour tous les arcs sortants
+       for(Arc arcCourrant: noeudCourant.getListeArcSortants().values()){
+         Noeud noeudDestination = arcCourrant.getNoeudDestination();
+
+            //On ajoute ici un noeud à la mêmoire si c'est un nouveau noeud!
+            if(noeudDestination.getDijkstraPoids() == Integer.MAX_VALUE){
+              memoire.add(noeudDestination);
+            }
+
+         Integer poidsCourrant = noeudCourant.getDijkstraPoids() + arcCourrant.getMetrique();
+            //on met ici à jours le noeud dans la mêmoire si le poids du chemin est plus petit !
+            if (poidsCourrant< noeudDestination.getDijkstraPoids()){
+              noeudDestination.setDijkstraPoids(poidsCourrant);
+              noeudDestination.setDijkstraNoeudPrecedent(noeudCourant);
+            }
+       }
     }
   }
 }

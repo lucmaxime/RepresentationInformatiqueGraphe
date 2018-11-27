@@ -1,24 +1,52 @@
 package Modele;
-
 import java.util.HashMap;
+import java.util.List;
 
 public abstract class  Noeud {
 
     private String nom;
     private Boolean marque;
     private Integer niveau;
+    private Integer DijkstraPoids;
+    private Noeud DijkstraNoeudPrecedent;
 
 
-  private HashMap<String, Arc> listeArcSortants;
+  private HashMap<String, Triplet> vpcc;
+    private HashMap<String, Arc> listeArcSortants;
     private HashMap<String, Arc> listArcEntrants;
 
     public Noeud(String nom) {
       this.nom = nom;
       this.listeArcSortants = new HashMap<>();
       this.listArcEntrants = new HashMap<>();
+      this.vpcc = new HashMap<>();
       this.marque = false;
       this.niveau = 0;
     }
+
+  public HashMap<String, Triplet> getVpcc() {
+    return vpcc;
+  }
+
+  public void setVpcc(HashMap<String, Triplet> vpcc) {
+    this.vpcc = vpcc;
+  }
+
+  public Noeud getDijkstraNoeudPrecedent() {
+    return DijkstraNoeudPrecedent;
+  }
+
+  public void setDijkstraNoeudPrecedent(Noeud dijkstraNoeudPrecedent) {
+    DijkstraNoeudPrecedent = dijkstraNoeudPrecedent;
+  }
+
+  public Integer getDijkstraPoids() {
+    return DijkstraPoids;
+  }
+
+  public void setDijkstraPoids(Integer dijkstraPoids) {
+    DijkstraPoids = dijkstraPoids;
+  }
     public Integer getNiveau() {
       return niveau;
     }
