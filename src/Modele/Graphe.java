@@ -306,8 +306,6 @@ public class Graphe implements Serializable {
     HashMap<Integer, List<Noeud>> hashTriTopo = new HashMap<>();
     int numeroDegree = 0;
 
-    //AJOUTER CONDITION SI CYCLE?
-    Boolean cycle = false;
 
     //On fait une copie du graphe pour pouvoir l'altérer sans supprimer dans le vrai
     Graphe grapheMemoire = copy(this);
@@ -324,6 +322,10 @@ public class Graphe implements Serializable {
 
         if (noeudCourant.getDegreeEntrant() == 0) {
           listNoeudDegreCourrant.add(noeudCourant);
+          //Dès que la liste est plus longue, il y'a un cycle!
+          if(listNoeudDegreCourrant.size()>grapheMemoire.getListeNoeuds().size()){
+            return null;
+          }
         }
       }
 
@@ -339,7 +341,6 @@ public class Graphe implements Serializable {
       numeroDegree = numeroDegree + 1;
 
     }
-
     return hashTriTopo;
   }
 

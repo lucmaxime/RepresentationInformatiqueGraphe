@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f3954f34-5e29-423d-95fd-5b5bbc1bb67e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arcs/EstAmi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Arcs/EstAmi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Graphe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Graphe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeud.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeud.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeuds/Personne.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Modele/Noeuds/Personne.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Programme/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Representation_informatique_graphe/Programme/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modele/Arc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Arc.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modele/Arcs/EstAmi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Arcs/EstAmi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Modele/Graphe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Graphe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modele/Noeud.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Noeud.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Modele/Noeuds/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Modele/Noeuds/Personne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Programme/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Programme/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -99,12 +87,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="36" />
-          <entry key="java" value="21587" />
+          <entry key="java" value="21752" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="21587" />
+          <entry key="JAVA" value="21752" />
           <entry key="PLAIN_TEXT" value="36" />
         </counts>
       </usages-collector>
@@ -143,8 +131,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
+            <state relative-caret-position="207">
+              <caret line="323" column="51" selection-start-line="323" selection-start-column="51" selection-end-line="323" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#toString#0;class#Graphe#0" />
@@ -295,7 +283,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543941613739" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../Systèmes_d_information/Semestre_5/Organisation_du_développement_logiciel/Outils_de_développement_intégré_prat/18a-projet-2-parretpenot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -398,12 +386,12 @@
       <workItem from="1543387698550" duration="35000" />
       <workItem from="1543912172164" duration="7787000" />
       <workItem from="1544467812078" duration="696000" />
-      <workItem from="1544516096888" duration="4612000" />
+      <workItem from="1544516096888" duration="7007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141877000" />
+    <option name="totallyTimeSpent" value="144272000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1721" height="935" extended-state="6" />
@@ -424,7 +412,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.25126263" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.17424242" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003003" side_tool="true" weight="0.3181818" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.29924244" />
@@ -644,8 +632,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Modele/Graphe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="310" lean-forward="true" selection-start-line="310" selection-end-line="310" />
+        <state relative-caret-position="207">
+          <caret line="323" column="51" selection-start-line="323" selection-start-column="51" selection-end-line="323" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#toString#0;class#Graphe#0" />
