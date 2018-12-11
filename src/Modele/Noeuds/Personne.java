@@ -1,8 +1,9 @@
 package Modele.Noeuds;
 
 import Modele.Noeud;
+import java.io.Serializable;
 
-public class Personne extends Noeud {
+public class Personne extends Noeud implements Serializable {
   private boolean enCouple;
 
   public Personne(String nom, boolean enCouple) {

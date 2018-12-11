@@ -1,8 +1,9 @@
 package Modele;
 
 import Modele.Noeuds.Personne;
+import java.io.Serializable;
 
-public abstract class Arc {
+public abstract class Arc implements Serializable {
 
     private String nom;
     private Integer metrique;

@@ -3,8 +3,9 @@ package Modele.Arcs;
 import Modele.Arc;
 import Modele.Noeud;
 import Modele.Noeuds.Personne;
+import java.io.Serializable;
 
-public class EstAmi extends Arc {
+public class EstAmi extends Arc implements Serializable {
 
   public EstAmi(String nom, Integer metrique, Noeud noeudDestination,
       Noeud noeudSource) {
