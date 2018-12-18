@@ -48,12 +48,19 @@ public class Main {
 
         HashMap<Integer,List<Noeud>> triTopologique = g.triTopologique();
 
+        g.ordoAuplusTot();
+        g.ordoAuPlusTard();
+
         for(Entry<Integer,List<Noeud>> entry : triTopologique.entrySet()){
           System.out.println("Rang numero :"+entry.getKey());
           for(Noeud noeudCourrant : entry.getValue()){
             System.out.println("Noeud :"+ noeudCourrant.getNom());
+            System.out.println("OrdoPlusTot :"+ noeudCourrant.getOrdoTot());
+            System.out.println("OrdoPlusTard :"+ noeudCourrant.getOrdoTard());
           }
         }
+
+
         /*
 
         g.dijkstra(person1);

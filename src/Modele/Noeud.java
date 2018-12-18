@@ -13,6 +13,8 @@ public abstract class Noeud implements Serializable {
   private Noeud DijkstraNoeudPrecedent;
   private Integer degreeEntrant;
   private Integer degreeSortant;
+  private Integer ordoTot;
+  private Integer ordoTard;
 
   private HashMap<String, Triplet> vpcc;
   private HashMap<String, Arc> listeArcSortants;
@@ -25,6 +27,22 @@ public abstract class Noeud implements Serializable {
     this.vpcc = new HashMap<>();
     this.marque = false;
     this.niveau = 0;
+  }
+
+  public Integer getOrdoTot() {
+    return ordoTot;
+  }
+
+  public void setOrdoTot(Integer ordoTot) {
+    this.ordoTot = ordoTot;
+  }
+
+  public Integer getOrdoTard() {
+    return ordoTard;
+  }
+
+  public void setOrdoTard(Integer ordoTard) {
+    this.ordoTard = ordoTard;
   }
 
   public HashMap<String, Triplet> getVpcc() {

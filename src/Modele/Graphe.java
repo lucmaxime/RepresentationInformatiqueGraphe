@@ -10,9 +10,11 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.Stack;
 
 public class Graphe implements Serializable {
@@ -321,7 +323,8 @@ public class Graphe implements Serializable {
       for (Noeud noeudCourant : grapheMemoire.listeNoeuds.values()) {
 
         if (noeudCourant.getDegreeEntrant() == 0) {
-          listNoeudDegreCourrant.add(noeudCourant);
+          //ATTENTION ICI AJOUTER LE NOEUD CORRESPONDANT DU GRAPHE ET NON NOEUD DE LA COPIE SINON PROBLEME DE REFERENCE
+          listNoeudDegreCourrant.add(this.listeNoeuds.get(noeudCourant.getNom()));
           //Dès que la liste est plus longue, il y'a un cycle!
           if(listNoeudDegreCourrant.size()>grapheMemoire.getListeNoeuds().size()){
             return null;
@@ -342,6 +345,53 @@ public class Graphe implements Serializable {
 
     }
     return hashTriTopo;
+  }
+
+  public void ordoAuplusTot() throws IOException, ClassNotFoundException {
+    //Initialisation
+    for(Noeud noeudCourrant : this.getListeNoeuds().values()){
+      noeudCourrant.setOrdoTot(0);
+    }
+
+    HashMap<Integer,List<Noeud>> hashTriTopo = triTopologique();
+
+    //Double boucle qui va parcourir tous les noeuds par niveaux de la hashmap
+    for(List<Noeud> rang : hashTriTopo.values()){
+      for(Noeud noeudCourrant : rang){
+        //Boucle qui va parcourir les arcs
+        for(Arc arcCourrant : noeudCourrant.getListeArcSortants().values()){
+          Integer ordoCourrant = noeudCourrant.getOrdoTot() + arcCourrant.getMetrique();
+          if(ordoCourrant>arcCourrant.getNoeudDestination().getOrdoTot()){
+            arcCourrant.getNoeudDestination().setOrdoTot(ordoCourrant);
+          }
+        }
+      }
+    }
+  }
+
+  public void ordoAuPlusTard() throws IOException, ClassNotFoundException {
+    //Initialisation
+    HashMap<Integer,List<Noeud>> hashTriTopo = triTopologique();
+
+    //On va ici rechercher le dernier Noeud du triTopo et son ordoTot , on inverse la liste donc
+    List<List<Noeud>> listeMiseRang = new ArrayList<>(hashTriTopo.values());
+    Collections.reverse(listeMiseRang);
+
+    for(Noeud noeudCourrant : this.listeNoeuds.values()){
+      noeudCourrant.setOrdoTard(listeMiseRang.get(0).get(0).getOrdoTot());
+    }
+
+    for(List<Noeud> rang : listeMiseRang){
+      for (Noeud noeudCourrant : rang){
+        for(Arc arcCourrant : noeudCourrant.getListArcEntrants().values()){
+          Integer ordoCourrant = noeudCourrant.getOrdoTard() - arcCourrant.getMetrique();
+          if(ordoCourrant < arcCourrant.getNoeudSource().getOrdoTard()){
+            arcCourrant.getNoeudSource().setOrdoTard(ordoCourrant);
+          }
+        }
+      }
+    }
+
   }
 
 
